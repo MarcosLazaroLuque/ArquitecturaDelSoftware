@@ -1,5 +1,6 @@
 from django.db import models
 
+<<<<<<< HEAD
 class Cliente(models.Model):
     nombre = models.CharField(max_length=100)
     telefono = models.CharField(max_length=15)
@@ -29,3 +30,6 @@ class CocheServicio(models.Model):
     coche = models.ForeignKey(Coche, on_delete=models.CASCADE)
     servicio = models.ForeignKey(Servicio, on_delete=models.CASCADE)
     fecha = models.DateField(auto_now_add=True)
+=======
+# Create your models here.
+>>>>>>> 41263e665ae1dcc967eb641006b9b880fd8bc7eb
