@@ -21,6 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-fyei2yd9shhnevbv9p!f5n9f13w-j77^zd1jveq2vu2lkw40h%'
+SECRET_KEY = 'django-insecure-%r0+j-%dqs_gz#3)_y9ati_^s12y*yd!c(k2m(y5)^k!j!i46u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -31,7 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'app_gestion_coches.apps.AppGestionCochesConfig',
+    'app_gestion_taller.apps.AppGestionTallerConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
