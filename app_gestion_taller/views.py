@@ -16,6 +16,7 @@ def detalle_cliente(request, cliente_id):
     except Cliente.DoesNotExist:
         return JsonResponse({"error": "Cliente no encontrado"}, status=404)
 
+
 @csrf_exempt
 def crear_cliente(request):
     if request.method == "POST":
@@ -123,4 +124,4 @@ def obtener_servicios_coche(request, coche_id):
         return JsonResponse(respuesta)
     except Coche.DoesNotExist:
         return JsonResponse({"error": "Coche no encontrado"}, status=404)
-    
+   
