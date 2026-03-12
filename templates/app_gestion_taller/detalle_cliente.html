@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Cliente</title>
+</head>
+<body>
+    <h1>{{cliente.nombre}}</h1>
+    <p>Teléfono: {{cliente.telefono}}</p>
+    <p>Email: {{cliente.email}}</p>
+
+    <h2>Coches del Cliente</h2>
+    {% if coches %}
+    <ul>
+        {%for coche in coches %}
+        <li>{{coche.marca}} {{coche.modelo}} {{coche.matricula}}</li>
+        {%endfor%}
+    </ul>
+    {% else %}
+    <p>Este cliente no tiene coches registrados</p>
+    {% endif %}
+</body>
+</html>
