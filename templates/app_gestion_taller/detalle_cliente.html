@@ -20,5 +20,6 @@
     {% else %}
     <p>Este cliente no tiene coches registrados</p>
     {% endif %}
+    <a href="{% url 'nuevo_coche' cliente.id %}">Añadir nuevo coche</a>
 </body>
 </html>
